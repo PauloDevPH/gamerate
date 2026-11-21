@@ -51,6 +51,7 @@ export function ReviewsSection({ gameId, initialReviews }: { gameId: string; ini
     staleTime: 30_000,
   });
 
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
   const myReview = reviews.find((r) => r.userId && r.userId === session?.user?.id);
 
   // Depois de qualquer mutação: invalida o cache do React Query + atualiza o Server Component.
@@ -69,7 +70,7 @@ export function ReviewsSection({ gameId, initialReviews }: { gameId: string; ini
 
   const remove = useMutation({
     mutationFn: (id: string) => api(`/api/reviews/${id}`, { method: "DELETE" }), // DELETE
-    onSuccess: afterChange,
+    onSuccess: () => { setConfirmDeleteId(null); afterChange(); },
   });
 
   return (
@@ -100,10 +101,24 @@ export function ReviewsSection({ gameId, initialReviews }: { gameId: string; ini
               <time className="text-[10px] text-slate-500">{formatDate(r.createdAt)}</time>
             </div>
             <p className="mb-2 leading-relaxed text-slate-300">{r.comment}</p>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-wrap items-center justify-between gap-2">
               <span className="flex items-center gap-1"><StarRating value={r.rating} /><b className="ml-1 text-slate-300">{r.rating}</b></span>
               {r.userId && r.userId === session?.user?.id && (
-                <Button size="sm" variant="destructive" disabled={remove.isPending} onClick={() => remove.mutate(r.id)}><Trash2 className="h-3 w-3" /> Excluir</Button>
+                confirmDeleteId === r.id ? (
+                  <div className="flex flex-wrap items-center gap-2 rounded-lg border border-red-500/40 bg-red-950/30 px-2.5 py-1.5 text-xs">
+                    <span className="font-medium text-red-200">Deseja realmente excluir o comentário?</span>
+                    <Button size="sm" variant="secondary" disabled={remove.isPending} onClick={() => setConfirmDeleteId(null)}>
+                      Cancelar
+                    </Button>
+                    <Button size="sm" variant="destructive" disabled={remove.isPending} onClick={() => remove.mutate(r.id)}>
+                      <Trash2 className="h-3 w-3" /> {remove.isPending ? "Excluindo..." : "Excluir"}
+                    </Button>
+                  </div>
+                ) : (
+                  <Button size="sm" variant="destructive" onClick={() => setConfirmDeleteId(r.id)}>
+                    <Trash2 className="h-3 w-3" /> Excluir
+                  </Button>
+                )
               )}
             </div>
           </article>
