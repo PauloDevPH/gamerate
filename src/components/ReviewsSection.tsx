@@ -38,9 +38,10 @@ export function ReviewsSection({ gameId, initialReviews }: { gameId: string; ini
   const { data: session } = useSession();
   const router = useRouter();
   const queryClient = useQueryClient();
-  const isOpen = useUIStore((s) => s.isReviewFormOpen);
-  const toggle = useUIStore((s) => s.toggleReviewForm);
+  const isOpen = useUIStore((s) => s.activeReviewGameId === gameId);
+  const toggleReviewForm = useUIStore((s) => s.toggleReviewForm);
   const close = useUIStore((s) => s.closeReviewForm);
+  const toggle = () => toggleReviewForm(gameId);
 
   const queryKey = ["reviews", gameId];
   const { data: reviews = [] } = useQuery({

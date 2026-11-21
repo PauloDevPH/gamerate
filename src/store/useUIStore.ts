@@ -15,19 +15,19 @@ import { create } from "zustand";
 interface UIState {
   searchTerm: string;
   minRating: number; // 0 = todos
-  isReviewFormOpen: boolean;
+  activeReviewGameId: string | null; // ID do jogo cujo formulário de avaliação está aberto
   setSearchTerm: (term: string) => void;
   setMinRating: (rating: number) => void;
-  toggleReviewForm: () => void;
+  toggleReviewForm: (gameId: string) => void;
   closeReviewForm: () => void;
 }
 
 export const useUIStore = create<UIState>()((set) => ({
   searchTerm: "",
   minRating: 0,
-  isReviewFormOpen: false,
+  activeReviewGameId: null,
   setSearchTerm: (searchTerm) => set({ searchTerm }),
   setMinRating: (minRating) => set({ minRating }),
-  toggleReviewForm: () => set((s) => ({ isReviewFormOpen: !s.isReviewFormOpen })),
-  closeReviewForm: () => set({ isReviewFormOpen: false }),
+  toggleReviewForm: (gameId) => set((s) => ({ activeReviewGameId: s.activeReviewGameId === gameId ? null : gameId })),
+  closeReviewForm: () => set({ activeReviewGameId: null }),
 }));

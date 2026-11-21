@@ -2,6 +2,8 @@
 
 Projeto da **3ª Unidade de Web II**. Catálogo de jogos onde usuários cadastrados avaliam com **estrelas (1–5)** e comentários.
 
+🔗 **Aplicação em produção (Vercel):** [https://gamerate-one.vercel.app](https://gamerate-one.vercel.app)
+
 ## Tecnologias
 
 | Área | Tecnologia |
@@ -29,10 +31,10 @@ Projeto da **3ª Unidade de Web II**. Catálogo de jogos onde usuários cadastra
 # 1. Instalar dependências
 npm install
 
-# 2. Configurar variáveis de ambiente
-cp .env.example .env.local
-#   -> preencha MONGODB_URI (string de conexão do Atlas)
-#   -> gere o segredo:  openssl rand -base64 32   e cole em NEXTAUTH_SECRET
+# 2. Configurar variáveis de ambiente (crie o arquivo .env.local na raiz)
+# MONGODB_URI=mongodb+srv://USUARIO:SENHA@cluster.mongodb.net/gamerate?retryWrites=true&w=majority
+# NEXTAUTH_SECRET=gere-com-openssl-rand-base64-32
+# NEXTAUTH_URL=http://localhost:3000
 
 # 3. (Opcional) Popular o banco com os 8 jogos + usuário de teste
 npm run seed        # login de teste: demo@gamerate.com / 123456
