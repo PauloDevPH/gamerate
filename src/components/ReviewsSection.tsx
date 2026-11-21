@@ -101,29 +101,42 @@ export function ReviewsSection({ gameId, initialReviews }: { gameId: string; ini
               <time className="text-[10px] text-slate-500">{formatDate(r.createdAt)}</time>
             </div>
             <p className="mb-2 leading-relaxed text-slate-300">{r.comment}</p>
-            <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center justify-between">
               <span className="flex items-center gap-1"><StarRating value={r.rating} /><b className="ml-1 text-slate-300">{r.rating}</b></span>
               {r.userId && r.userId === session?.user?.id && (
-                confirmDeleteId === r.id ? (
-                  <div className="flex flex-wrap items-center gap-2 rounded-lg border border-red-500/40 bg-red-950/30 px-2.5 py-1.5 text-xs">
-                    <span className="font-medium text-red-200">Deseja realmente excluir o comentário?</span>
-                    <Button size="sm" variant="secondary" disabled={remove.isPending} onClick={() => setConfirmDeleteId(null)}>
-                      Cancelar
-                    </Button>
-                    <Button size="sm" variant="destructive" disabled={remove.isPending} onClick={() => remove.mutate(r.id)}>
-                      <Trash2 className="h-3 w-3" /> {remove.isPending ? "Excluindo..." : "Excluir"}
-                    </Button>
-                  </div>
-                ) : (
-                  <Button size="sm" variant="destructive" onClick={() => setConfirmDeleteId(r.id)}>
-                    <Trash2 className="h-3 w-3" /> Excluir
-                  </Button>
-                )
+                <Button size="sm" variant="destructive" onClick={() => setConfirmDeleteId(r.id)}>
+                  <Trash2 className="h-3 w-3" /> Excluir
+                </Button>
               )}
             </div>
           </article>
         ))}
       </div>
+
+      {confirmDeleteId && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => !remove.isPending && setConfirmDeleteId(null)}
+        >
+          <div
+            className="w-full max-w-sm rounded-2xl border border-slate-700 bg-[#1b2838] p-5 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="mb-2 text-sm font-bold text-white">Confirmar exclusão</h3>
+            <p className="mb-5 text-xs text-slate-300">Deseja realmente excluir o comentário?</p>
+            <div className="flex justify-end gap-2">
+              <Button size="sm" variant="secondary" disabled={remove.isPending} onClick={() => setConfirmDeleteId(null)}>
+                Cancelar
+              </Button>
+              <Button size="sm" variant="destructive" disabled={remove.isPending} onClick={() => remove.mutate(confirmDeleteId)}>
+                <Trash2 className="h-3 w-3" /> {remove.isPending ? "Excluindo..." : "Excluir"}
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

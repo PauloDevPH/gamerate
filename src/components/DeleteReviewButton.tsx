@@ -23,23 +23,36 @@ export function DeleteReviewButton({ id }: { id: string }) {
     },
   });
 
-  if (confirming) {
-    return (
-      <div className="flex flex-wrap items-center gap-2 rounded-lg border border-red-500/40 bg-red-950/30 px-2.5 py-1.5 text-xs">
-        <span className="font-medium text-red-200">Deseja realmente excluir o comentário?</span>
-        <Button size="sm" variant="secondary" disabled={remove.isPending} onClick={() => setConfirming(false)}>
-          Cancelar
-        </Button>
-        <Button size="sm" variant="destructive" disabled={remove.isPending} onClick={() => remove.mutate()}>
-          <Trash2 className="h-3 w-3" /> {remove.isPending ? "Excluindo..." : "Excluir"}
-        </Button>
-      </div>
-    );
-  }
-
   return (
-    <Button size="sm" variant="destructive" onClick={() => setConfirming(true)}>
-      <Trash2 className="h-3 w-3" /> Excluir
-    </Button>
+    <>
+      <Button size="sm" variant="destructive" onClick={() => setConfirming(true)}>
+        <Trash2 className="h-3 w-3" /> Excluir
+      </Button>
+
+      {confirming && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          onClick={() => !remove.isPending && setConfirming(false)}
+        >
+          <div
+            className="w-full max-w-sm rounded-2xl border border-slate-700 bg-[#1b2838] p-5 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="mb-2 text-sm font-bold text-white">Confirmar exclusão</h3>
+            <p className="mb-5 text-xs text-slate-300">Deseja realmente excluir o comentário?</p>
+            <div className="flex justify-end gap-2">
+              <Button size="sm" variant="secondary" disabled={remove.isPending} onClick={() => setConfirming(false)}>
+                Cancelar
+              </Button>
+              <Button size="sm" variant="destructive" disabled={remove.isPending} onClick={() => remove.mutate()}>
+                <Trash2 className="h-3 w-3" /> {remove.isPending ? "Excluindo..." : "Excluir"}
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
