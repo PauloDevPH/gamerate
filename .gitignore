@@ -1,0 +1,8 @@
+node_modules
+.next
+.env*.local
+.env
+.env.example
+GUIA_APRESENTACAO.md
+next-env.d.ts
+*.tsbuildinfo

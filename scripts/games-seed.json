@@ -1,0 +1,256 @@
+[
+  {
+    "title": "Elden Ring",
+    "cover": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900.jpg",
+    "description": "Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde nas Terras Intermédias. Uma vasta aventura de RPG de ação criada por Hidetaka Miyazaki e George R. R. Martin.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/AKXiKBnzpBQ?si=0MUfZ5deH3suf9wp"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/ss_943bf6fe62352757d9070c1d33e50b92fe8539f1.1920x1080.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/ss_dcdac9e4b26ac0ee5248bfd2967d764fd00cdb42.1920x1080.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/ss_3c41384a24d86dddd58a8f61db77f9dc0bfda8b5.1920x1080.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Gato Misterioso",
+        "rating": 5,
+        "comment": "Simplesmente obra-prima! O mundo aberto mais recompensador que já joguei.",
+        "createdAt": "2026-09-22T12:00:00.000Z"
+      },
+      {
+        "author": "Maculado",
+        "rating": 5,
+        "comment": "Desafiador na medida certa, direção de arte impecável.",
+        "createdAt": "2026-09-24T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Red Dead Redemption 2",
+    "cover": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg",
+    "description": "América, 1899. O fim da era do velho oeste começou. Arthur Morgan e a gangue Van der Linde são forçados a fugir. Com agentes federais e os melhores caçadores de recompensas no seu encalço, a gangue precisa roubar, furtar e lutar para sobreviver.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/eaW0tYpxyp0"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.1920x1080.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.1920x1080.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1174180/ss_668dafe477743f8b50b818d5bbfcec669e9ba93e.1920x1080.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Dutch Traíra",
+        "rating": 5,
+        "comment": "A história mais emocionante dos videogames. Realismo impressionante.",
+        "createdAt": "2026-09-23T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "God of War Ragnarök",
+    "cover": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/library_600x900.jpg",
+    "description": "Kratos e Atreus embarcam em uma jornada mítica em busca de respostas antes que a batalha aconteça...",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/hfJ4Km46A-0"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/ss_7c59382e67eadf779e0e15c3837ee91158237f11.1920x1080.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/ss_05f27139b15c5410d07cd59b7b52adbdf73e13da.1920x1080.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/ss_974a7b998c0c14da7fe52a342cf36c98850a57ac.1920x1080.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Kleito Bom de Guerra",
+        "rating": 4.8,
+        "comment": "Combate fluido e história envolvente.",
+        "createdAt": "2026-09-20T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Crimson Desert",
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/7/73/CCrimson_Desert.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
+    "description": "Crimson Desert é um jogo de ação e aventura em mundo aberto no continente de Pywel. Junte-se a Kliff para reconstruir os Jubas Cinzentas e salvar a terra de uma ameaça iminente. Das regiões selvagens e cidades ao misterioso Abismo, forje seu caminho com batalhas e descobertas.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/YHhwdyWkwTQ"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/2fd06c82a96ba625e5e348e964e48ca372022549/ss_2fd06c82a96ba625e5e348e964e48ca372022549.1920x1080.jpg?t=1789020763"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/55e514af688f459364b3d0ffb288faf73580c8e5/ss_55e514af688f459364b3d0ffb288faf73580c8e5.1920x1080.jpg?t=1789020763"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3321460/17861390a1d7e6bbf3c44854605c63d68127afac/ss_17861390a1d7e6bbf3c44854605c63d68127afac.1920x1080.jpg?t=1789020763"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Klif Carmesin",
+        "rating": 4.8,
+        "comment": "Combate espetacular e história empolgante.",
+        "createdAt": "2026-09-20T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Cyberpunk 2077",
+    "cover": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900.jpg",
+    "description": "Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto que se passa em Night City, uma megalópole perigosa onde todos são obcecados por poder, glamour e alterações corporais.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/8X2kIfS6fb8"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_b529b0abc43f55fc23fe8058eddb6e37c9629a6a.1920x1080.jpg?t=1784714077"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/ss_2f649b68d579bf87011487d29bc4ccbfdd97d34f.1920x1080.jpg?t=1784714077"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_9beef14102f164fa1163536d0fb3a51d0a2e4a3f.1920x1080.jpg?t=1784714077"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "John Wilker",
+        "rating": 4.8,
+        "comment": "Combate frenético.",
+        "createdAt": "2026-09-20T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "The Witcher 3: Wild Hunt",
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
+    "description": "Você é Geralt de Rívia, mercenário matador de monstros. Você está em um continente devastado pela guerra e infestado de monstros para você explorar à vontade. Sua tarefa é encontrar Ciri, a Criança da Profecia — uma arma viva que pode alterar a forma do mundo.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/IGk17XQ7IrQ?si=3ut9OlJRQur1TnfE"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_07812c174bb6b96c29895ddc27404143df7aba6d.1920x1080.jpg?t=1788333513"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_0901e64e9d4b8ebaea8348c194e7a3644d2d832d.1920x1080.jpg?t=1788333513"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ss_dc33eb233555c13fce939ccaac667bc54e3c4a27.1920x1080.jpg?t=1788333513"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Carpeado",
+        "rating": 5,
+        "comment": "Merece um Óscar.",
+        "createdAt": "2026-09-20T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Grand Theft Auto VI",
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/4/46/Grand_Theft_Auto_VI.png?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
+    "description": "Sol, crime e neon. Bem-vindo a Leonida. Prepare-se para dominar as ruas de Vice City na maior e mais imersiva evolução da série Grand Theft Auto de todos os tempos.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/QdBZY2fkU-0"
+      },
+      {
+        "type": "image",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQqzNVkZjS7NG04vbYsX3prRLonrmqXOaMlSD0ePm3rtbi6hNzOCF-Nk&s=10"
+      },
+      {
+        "type": "image",
+        "url": "https://sm.ign.com/ign_br/news/h/how-the-gt/how-the-gta-6-map-size-stacks-up-to-other-rockstar-games-lik_nc6c.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://gmedia.playstation.com/is/image/SIEPDC/grand-theft-auto-vi-screenshot-09-en-06may25?$1600px$"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "CJ do Futuro",
+        "rating": 4.8,
+        "comment": "Agaragã!",
+        "createdAt": "2026-09-20T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Resident Evil Requiem",
+    "cover": "https://upload.wikimedia.org/wikipedia/pt/1/15/Resident_Evil_Requiem_Cover_Art.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original",
+    "description": "Réquiem para os mortos. Pesadelo para os vivos. Prepare-se para escapar da morte em uma experiência aterrorizante que vai gelar sua espinha.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://www.youtube.com/embed/POz1-EmLsTY?si=t0vWYe-bHhhDmKTU"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3764200/9422ad111dfd5fe1df34352946c6aa715c23f0f6/ss_9422ad111dfd5fe1df34352946c6aa715c23f0f6.1920x1080.jpg?t=1779840172"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3764200/b61e78a244aef7a12cf08f9dc7e7fc7ead6eeddb/ss_b61e78a244aef7a12cf08f9dc7e7fc7ead6eeddb.1920x1080.jpg?t=1779840172"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3764200/e4508c17151714d5d4f80cd31bdcacf0caf5559c/ss_e4508c17151714d5d4f80cd31bdcacf0caf5559c.1920x1080.jpg?t=1779840172"
+      }
+    ],
+    "reviews": [
+      {
+        "author": "Nêmesis",
+        "rating": 4.8,
+        "comment": "Suspense absurdo!",
+        "createdAt": "2026-09-20T12:00:00.000Z"
+      }
+    ]
+  }
+]
